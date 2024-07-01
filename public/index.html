@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Shopping</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons -->
+    <link
+     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="#" class="logo">NextGen</a>
+            <!--Cart Icon-->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <!--cart-->
+            <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+                <!--content-->
+                <div class="cart-content"></div>
+                <!--total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!--Buy button-->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!--close cart-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Products -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- shop content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs_5GcAACuSfLuTbGkG87O8hKLEYuYRlf0wKYs34x5jC3XtoGMDSYsNjqvi4hBbYwJlh6CgjMBYABuUCMFPPPXK9LU-UrdPBYbGRNNL5ilVcu0L7BP836FGU07sDVxTxLOMPzgQu0qEqsW-bZcwNVLysufQ244TAzkj_asL7CW3h9KXggKbR6BS999E34/s1600/51rp0nqaPoL._AC_UY218_.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">Samsung Galaxy A15</h2>
+                <span class="price">$135</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+             <!-- Box 2 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmKN1kloHGyagYeILI7zrviAX_ZmFecy9KnYNeEN0WH2tf_PtZ59R2rWfBQaE0m33ZB0NPr6VlCyrh7Sie_D5sasUIELNYcd4sZbwwQTaFtwm6n2xDwN3QMK0fx8CerWZh_3MZE_7rZJc0diEWTYTVv7ooUfQJtqPJ-OuT7yNDaZZ5EEoO7VLF4qle_xU/s1600/61K1Fz5LxvL._AC_UY218_.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">Moto G Play 2023</h2>
+                <span class="price">$99</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="product-box">
+                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyn7pcgeTymrT12cYJxUxFWWOWYrw203mlhccINHeXuAN8-H3ZVi1kcw8YBk6ZC_79DcdwGORyFOiolaxpevzjHDjidAKM0hqoVtT9l0iUFmKNejRXs3OilBzCYhDjETjfiwVp0gfOhLlGCNO8oRSOQvU83k8kI0xTQk-qalLBUUC3_-5SnBBV5jS8fcU/s1600/61XHp5PvPUL._AC_UY218_.jpg" 
+                    alt="" class="product-img"/>
+                <h2 class="product-title">UMIDIGI A15 Cell Phones</h2>
+                <span class="price">$169</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="product-box">
+                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSGLAC2gwZUdmyFknXGsPf1yP53ffkaBZLhT7NDOvw1mX0_Bx4o6og6AM02wwOkIdKHALrD5k-YsKNPSG4ZFgjciImNUx6QeFKAfm66J_JpdIVbK3KINWLND7bz9MJZZcIxMToUuZ6_zs2oS9hS07O67p2gfPdybPphwcKxAUAs_TXC51AdFJqQdiTJNk/s1600/71ZjanVe7oL._AC_UY218_.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">Xiaomi Redmi Note 13 PRO</h2>
+                <span class="price">$294</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 5 -->
+            <div class="product-box">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO5Mii5CzLNUIGTG93w8U5l72tPMeGH53IagS4-UJHWlmRvSOLZpXDohX9pnMC0dPLO6F_RorZ_65d2kHI8-2ctcPAfc0rkaqQYUF7-ks60ZslzqBRaVsmPwc-onU-KLMb7UYcXo3VYGejbwhgSGwY09eKTvpimAkl6_1o1hR-2ah-Bdi3CQicpIYkA5Y/s1600/81TeO+nqxnL._AC_UY218_.jpg" 
+             alt="" class="product-img"/>
+             <h2 class="product-title">BLU G73</h2>
+            <span class="price">$99</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 6 -->
+            <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIdFnI4ylWRER0CIqufuXfre-RO29_35KckAewGvgvM6Lhb_5L7BD58T3tlhcYoB58F6dTOozyldhl5klCNI56Zs7PCELy-DwOh1C-Y5KkvvEajcp6P8RBqMS2ssWkUY9vQppknatjrmuXRx4z0WnYmG69sUMMnbSp0nbFB5-CqJLGGiQtWIDeIihwCWQ/s1600/616uMtIWiiL._AC_UY218_.jpg" 
+            alt="" class="product-img"/>
+            <h2 class="product-title">OnePlus Nord N30</h2>
+            <span class="price">$249</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 7 -->
+            <div class="product-box">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ8yEIvZro5GXHxX1vieExfyu6FmN0RPFnf8-IvMcaf-s-uMncpmh35dp-rcNIwAAY0i6UWu3PG_Aw-Bp-S2pOH-rEPu8lxn94AB9ZR7FVCou9AABcjFx9NEt3K55ZxlS_t2SyPmNtVUIOD0vlaNuBiNjhhUE9cmOA_3vVtXKImtenVTGpjDsadTQuT3g/s1600/711F6T6aySL._AC_UY218_.jpg" 
+             alt="" class="product-img"/>
+             <h2 class="product-title">OnePlus 12</h2>
+            <span class="price">$799</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+    <!-- Link to JS -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
