@@ -1,17 +1,23 @@
 const payBtn = document.querySelector(".btn-buy");
 
 payBtn.addEventListener("click", () => {
+    const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
     fetch("/stripe-checkout", {
         method: "post",
-        headers: new Headers({ "Content-Type": "application/Json" }),
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-            items: JSON.parse(localStorage.getItem("cartItems")),
+            items: cartItems,
         }),
     })
     .then((res) => res.json())
-    .then((url) => {
-        location.href = url;
-        clearCart();
+    .then((data) => {
+        if (data.url) {
+            clearCart();
+            location.href = data.url;
+        } else {
+            console.error("No URL found in the response:", data);
+        }
     })
-    .catch((err) => console.log(err));
+    .catch((err) => console.error("Error during checkout:", err));
 });

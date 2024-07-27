@@ -139,9 +139,9 @@ function saveCartItems () {
     var cartItems = [];
 
     for (var i=0; i< cartBoxes.length; i++) {
-        cartBox = cartBoxes[i];
+        var cartBox = cartBoxes[i];
         var titleElement = cartBox.getElementsByClassName('cart-product-title')[0];
-        var priceElement = cart.getElementsByClassName('cart-price')[0];
+        var priceElement = cartBox.getElementsByClassName('cart-price')[0];
         var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
         var productImg = cartBox.getElementsByClassName('cart-img')[0].src;
 
@@ -157,6 +157,8 @@ function saveCartItems () {
 }
 // Loads in Cart
 function loadCartItems () {
+    //let token = getCookie('token');
+   // console.log("This "+token);
     var cartItems = localStorage.getItem('cartItems');
     if(cartItems) {
         cartItems = JSON.parse(cartItems);
@@ -198,4 +200,26 @@ function clearCart() {
     cartContent.innerHTML = "";
     updatetotal();
     localStorage.removeItem("cartItems");
+    localStorage.removeItem("cartTotal");
 }
+
+/*
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  console.log("name:",name);
+  console.log("decodedCookie:",decodedCookie);
+  console.log("ca:",ca);
+
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+} */
