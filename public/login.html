@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container" style="width: 400px; margin-top: 50px;">
+      <div class="text">User Login</div>
+      <form id="loginForm">
+        <div class="data">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="data">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+        </div>
+        <div class="btn">
+          <button type="submit">Login</button>
+        </div>
+        <div class="signup-link">
+          Not a member? <a href="signup.html">Signup now</a>
+        </div>
+      </form>
+    </div>
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', async function (event) {
+        event.preventDefault();
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+          const response = await fetch('/api/users/login', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          });
+
+          if (response.redirected) {
+            window.location.href = response.url;
+          } else {
+            const result = await response.json();
+            alert(result.message || 'Login failed');
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          alert('An error occurred. Please try again later.');
+        }
+      });
+    </script>
+  </body>
+</html>

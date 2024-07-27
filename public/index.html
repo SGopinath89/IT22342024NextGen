@@ -9,6 +9,10 @@
     <!-- Box Icons -->
     <link
      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+     <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Navbar-->
@@ -16,7 +20,17 @@
         <!--Nav-->
         <div class="nav container">
             <!--Logo-->
-            <a href="#" class="logo">NextGen</a>
+            <div class="nav_logo">
+                <a href="#" class="logo">NextGen</a>
+            </div>
+            <div>
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Register</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+
+                    <li> 
             <!--Cart Icon-->
             <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
             <!--cart-->
@@ -33,6 +47,9 @@
                 <button type="button" class="btn-buy">Pay Now</button>
                 <!--close cart-->
                 <i class='bx bx-x' id="close-cart"></i>
+            </div>
+            </li>
+        </ul>
             </div>
         </div>
     </header>
@@ -70,14 +87,24 @@
 
             <!-- Box 4 -->
             <div class="product-box">
-                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSGLAC2gwZUdmyFknXGsPf1yP53ffkaBZLhT7NDOvw1mX0_Bx4o6og6AM02wwOkIdKHALrD5k-YsKNPSG4ZFgjciImNUx6QeFKAfm66J_JpdIVbK3KINWLND7bz9MJZZcIxMToUuZ6_zs2oS9hS07O67p2gfPdybPphwcKxAUAs_TXC51AdFJqQdiTJNk/s1600/71ZjanVe7oL._AC_UY218_.jpg" 
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDgBJBb2LnpsHq2ow1bdFJ2KQCEgX8USBXb6HHMU_JDVEO50lS6RTXMzxjS4jrKV8Mm3TyfYYkRPuzJFpelo35Rr96C8GisoE4nIIk4O9tb-ZVg_a7bq73xLvxbb6oeZEaox7pm-GKnlcEFQ_Tuj8nZ2RO05_nclTgKJpeAo18E2pvHjU-SmsS-QlIu44/s1600/fitbit%20versa%204.jpg" 
                 alt="" class="product-img"/>
-                <h2 class="product-title">Xiaomi Redmi Note 13 PRO</h2>
-                <span class="price">$294</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
+                <h2 class="product-title">Fitbit Versa 4 Fitness Smartwatch</h2>
+               <span class="price">$199</span>
+               <i class='bx bx-shopping-bag add-cart'></i>
+               </div>
 
             <!-- Box 5 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpFYTj-q11dkmigldrb48peOVaBTb6NiW-984FWBBQiU9p7EE8yIRONko2z5Ol-O_VeljJLIlCi4hfc0l6-01o0IcCI6ZvN8Wbal5IrCm2y9dK4uz61q_yklAEBeCNWCds7dBtrYPkweEFCfro7sy15-rH1TJdq_BQaLAJ2mc_CYJ2qI3jFD-VXTzQRuk/s1600/EUQQ%20wireless%20earbud.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">EUQQ Wireless Earbuds</h2>
+               <span class="price">$49</span>
+               <i class='bx bx-shopping-bag add-cart'></i>
+               </div>
+
+
+            <!-- Box 6 -->
             <div class="product-box">
              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO5Mii5CzLNUIGTG93w8U5l72tPMeGH53IagS4-UJHWlmRvSOLZpXDohX9pnMC0dPLO6F_RorZ_65d2kHI8-2ctcPAfc0rkaqQYUF7-ks60ZslzqBRaVsmPwc-onU-KLMb7UYcXo3VYGejbwhgSGwY09eKTvpimAkl6_1o1hR-2ah-Bdi3CQicpIYkA5Y/s1600/81TeO+nqxnL._AC_UY218_.jpg" 
              alt="" class="product-img"/>
@@ -86,7 +113,7 @@
             <i class='bx bx-shopping-bag add-cart'></i>
             </div>
 
-            <!-- Box 6 -->
+            <!-- Box 7 -->
             <div class="product-box">
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIdFnI4ylWRER0CIqufuXfre-RO29_35KckAewGvgvM6Lhb_5L7BD58T3tlhcYoB58F6dTOozyldhl5klCNI56Zs7PCELy-DwOh1C-Y5KkvvEajcp6P8RBqMS2ssWkUY9vQppknatjrmuXRx4z0WnYmG69sUMMnbSp0nbFB5-CqJLGGiQtWIDeIihwCWQ/s1600/616uMtIWiiL._AC_UY218_.jpg" 
             alt="" class="product-img"/>
@@ -95,14 +122,89 @@
             <i class='bx bx-shopping-bag add-cart'></i>
             </div>
 
-            <!-- Box 7 -->
+            <!-- Box 8 -->
             <div class="product-box">
-             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ8yEIvZro5GXHxX1vieExfyu6FmN0RPFnf8-IvMcaf-s-uMncpmh35dp-rcNIwAAY0i6UWu3PG_Aw-Bp-S2pOH-rEPu8lxn94AB9ZR7FVCou9AABcjFx9NEt3K55ZxlS_t2SyPmNtVUIOD0vlaNuBiNjhhUE9cmOA_3vVtXKImtenVTGpjDsadTQuT3g/s1600/711F6T6aySL._AC_UY218_.jpg" 
-             alt="" class="product-img"/>
-             <h2 class="product-title">OnePlus 12</h2>
-            <span class="price">$799</span>
-            <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_PIvDAqxgWoXYpVavAJqPj8G_49Bro3qOzmZOGNX0002qO_V2CZ5uASGEPiF6hTsSXNsAonY-zqzvFH4_lvHGX9-PKZj8AhvyRAY9bGEw_AtlpNLF_n5ZswWvD7gaw2w-rrarzENXdi8-9uNIMJqxorOqwQxKt5YTGljMI1WY1BaWiXappTTOLmHO-rQ/s1600/samsung%20galaxy%20watch.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">SAMSUNG Galaxy Watch 6</h2>
+               <span class="price">$209</span>
+               <i class='bx bx-shopping-bag add-cart'></i>
+               </div>
+
+
+            <!-- Box 9 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtHRMDpSY4yr_9PD8UfgpbYTuTiJ6l8un79NrrFWICbh-TH-wF-j32E8m8XV8RFo2tBLpYemx2qREZcFLeJB59w7_pGdPbB3Fkm0yPEzgbpjw-sVWPc2waiqUJBbiDXBQZ0vTbAcm4S3VYRTlfbEg-Z-JwgELa8QMKVa7FcYft6wwcPncZWwpVitjb01A/s1600/download.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">HP Notebook Laptop, 15.6" HD</h2>
+                <span class="price">$433</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+             <!-- Box 10 -->
+             <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSGLAC2gwZUdmyFknXGsPf1yP53ffkaBZLhT7NDOvw1mX0_Bx4o6og6AM02wwOkIdKHALrD5k-YsKNPSG4ZFgjciImNUx6QeFKAfm66J_JpdIVbK3KINWLND7bz9MJZZcIxMToUuZ6_zs2oS9hS07O67p2gfPdybPphwcKxAUAs_TXC51AdFJqQdiTJNk/s1600/71ZjanVe7oL._AC_UY218_.jpg" 
+               alt="" class="product-img"/>
+               <h2 class="product-title">Xiaomi Redmi Note 13 PRO</h2>
+               <span class="price">$294</span>
+               <i class='bx bx-shopping-bag add-cart'></i>
+           </div>
+
+            <!-- Box 11 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYN4W8LwwYJ-Ek5s7J9Tnp7THmSB2e89tuIbPfQSkOydL30Pe5-F1wlhrcTAXaoNgsP21R0X82j6aeB4J_x8A6FFJtnd-UDfjzse7M_qcx9A7Q36feQZqJgM29e2JdESM3O9in9pnDzwPnxIBKfCBcramkwHoD05fEw3GLX9smJ6m27upBPoq3g8HwuQo/s1600/gopro%20hero10.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">GoPro HERO10 Black camera</h2>
+               <span class="price">$214.97</span>
+               <i class='bx bx-shopping-bag add-cart'></i>
+               </div>
+
+            <!-- Box 12 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqj_ANSRXc2j8CzsXIrdQ3tBCqhaRkCaERwdQEXzoNkc5H0uXwfAfByXTAZlCyR6nldBjHmtGnX4Dnr0j_9Xy9n2Dsou9MIvjIbobWOVpuwRSyxEodOLoxaTWVIJd0ZEfrTwhyMeAafM7AAwvFbL45IP4hw9y3w2Hg5JtDe0LbpELRTqwQEBnv1HRa0Mc/s1600/insta360%20x3%20ultimate%20kit.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">Insta360 X3 Ultimate Kit</h2>
+               <span class="price">$467</span>
+               <i class='bx bx-shopping-bag add-cart'></i>
+               </div>
+
+            <!-- Box 13 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLh6H-0YMFOx1c5ZrIY7YPHaTYOzEiyAsnAwCuLJGw2RL81hRTNL8bFattDtmpg-8SsTitiFDugdddmezcd-E6e346oMt0LVSu_ktsBmzsR57kQAWi1okvuxmI36dhQpu98Hjv4JTFAzbvve4DplkYKwYbsQPYN2BS2CKzPUgzk4VVg1CMf_lTZVpiZJg/s1600/samsung%20galaxy%20tab%20A9+%20tablet.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">SAMSUNG Galaxy Tab A9+ Tablet</h2>
+               <span class="price">$169</span>
+               <i class='bx bx-shopping-bag add-cart'></i>
+               </div>
+
+            <!-- Box 14 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEja3JggZ1bTKWNShAMqnHrkc519ZUt4UM7QjApNKfhAn1vyByOwVzPBRPPCWyPGhZtuByrKmikkgE5jUi33wtxbsA0o9pcW6HKO6_u8cpfhsRXC2_imS11COZHBkyMNDn-rQZOIcsKlY_B9zgbO4NVXGozrjIp1z9nwHh_UTTfaB6vIEo7aSkVkaxtP6HM/s1600/samsung%20galaxy%20tab%20S6%20lite.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">SAMSUNG Galaxy Tab S6 Lite</h2>
+               <span class="price">$249</span>
+               <i class='bx bx-shopping-bag add-cart'></i>
+               </div>
+
+            <!-- Box 15 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAJojjp5QdBxJEoAMrob9lU0ez9SNunuOFgxIhPEwAHVmoplILOBYb4DEsEo0xvo12QOaCPhEa6Ru1JM-FsQ5JyX5LXHg5lG_-wViHrbPLpL4eE6mmtiyKCn3RfFhcNqfD5-NBYeFPZDs4vJ51vgu2DiJIAJGJgtA2QCTIDIL8lGKwQe4hUsRhH9k76as/s1600/wireless%20earbud.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">Wireless Earbud, Bluetooth 5.3 Earbud</h2>
+               <span class="price">$21</span>
+               <i class='bx bx-shopping-bag add-cart'></i>
+               </div>
+
+             <!-- Box 16 -->
+             <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ8yEIvZro5GXHxX1vieExfyu6FmN0RPFnf8-IvMcaf-s-uMncpmh35dp-rcNIwAAY0i6UWu3PG_Aw-Bp-S2pOH-rEPu8lxn94AB9ZR7FVCou9AABcjFx9NEt3K55ZxlS_t2SyPmNtVUIOD0vlaNuBiNjhhUE9cmOA_3vVtXKImtenVTGpjDsadTQuT3g/s1600/711F6T6aySL._AC_UY218_.jpg" 
+                alt="" class="product-img"/>
+                <h2 class="product-title">OnePlus 12</h2>
+               <span class="price">$799</span>
+               <i class='bx bx-shopping-bag add-cart'></i>
+               </div>
+
+
         </div>
     </section>
     <!-- Link to JS -->
