@@ -11,6 +11,7 @@ Features
 - Remove items from the cart
 - Dynamic price calculation
 - Stripe checkout integration
+- User authentication (register, login, logout)
 
 
  Running the Server
@@ -29,4 +30,13 @@ Project Structure
 - `server.js`: Node.js server
 - `cancel.html`: Checkout cancellation page
 - `success.html`: Checkout success page
+- `login.html`: Login page
+- `signup.html`: Signup page
+- `logout.html`: Logout page
+-  controllers/user.js
+    Handles user registration, login, and logout.
+- models/User.js
+    Mongoose schema for user data.
+- routes/user.js
+    Routes for user authentication.
 
